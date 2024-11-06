@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opal - Reserva</title>
+    <link rel="stylesheet" href="css/resv3.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <h1>Opal</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="inicio.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="reserva.html">Reservar</a>
+                <a href="#">Mis Reservaciones</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Reserva.</h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card sala-normal">
+                <div class="sala-content">
+                    <div class="sala-description">
+                        <h2>Sala Normal</h2>
+                        <p>La Sala Principal de Opal ofrece un ambiente sofisticado y acogedor, ideal para disfrutar de nuestros exquisitos cortes de carne. Con una decoración elegante y un servicio excepcional, cada detalle está pensado para brindar una experiencia gastronómica única.</p>
+                    </div>
+                    <img src="img/normal.jpg" alt="Sala Normal">
+                </div>
+            </div>
+
+            <div class="info-y-form">
+                <div class="card cosas">
+                    <h2>Cosas a tomar en cuenta</h2>
+                    <p>En Opal, valoramos la elegancia y el estilo. Recomendamos a nuestros clientes vestir de manera formal o de etiqueta elegante para complementar la atmósfera sofisticada del restaurante. Se requiere un código de vestimenta smart casual, evitando ropa deportiva o informal. La experiencia en Opal es un reflejo de buen gusto y exclusividad.</p>
+                </div>
+
+                <div class="card formulario">
+                    <h2>Formulario de Reserva</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fecha">Fecha de reserva:</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hora">Hora de reserva:</label>
+                            <input type="time" id="hora" name="hora" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="personas">Número de personas:</label>
+                            <input type="number" id="personas" name="personas" required>
+                        </div>
+
+                        <a href="resv4.html" class="button">Reserva Ahora</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>© 2024 Opal. All rights reserved</p>
+    </footer>
+</body>
+</html>

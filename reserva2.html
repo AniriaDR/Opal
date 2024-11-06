@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opal Reserva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/resv2.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <h1>Opal</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="inicio.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="reserva.html">Reservar</a>
+                <a href="#">Mis Reservaciones</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="reserva-info">
+                <div class="reserva">
+                    <h2>Reserva.</h2>
+                </div>
+                <div class="sala">
+                    <img src="img/normal.jpg" alt="Sala Normal">
+                    <h3>Sala Normal</h3>
+                    <p>La Sala Principal de Opal ofrece un ambiente sofisticado y acogedor, ideal para disfrutar de nuestros exquisitos cortes de carne. Con una decoración elegante y un servicio excepcional, cada detalle está pensado para brindar una experiencia gastronómica única.</p>
+                </div>
+            </div>
+            <div class="form">
+                <div class="reservation-form">
+                    <div class="form-group">
+                        <label for="personas">Número de personas:</label>
+                        <select name="personas" id="personas">
+                            <option value="">Seleccione una opción</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de reserva:</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora de reserva:</label>
+                        <input type="time" id="hora" name="hora">
+                    </div>
+                    <!-- Botón de Reservar -->
+                    <button class="reservar-btn">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>© 2024 Opal. All rights reserved</p>
+    </footer>
+</body>
+</html>
