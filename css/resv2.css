@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Group Reserva and Sala together */
+.reserva-info {
+    flex: 2; /* Ocupa más espacio que el formulario */
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de la barra de navegación */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+  }
+  
+  .logo {
+    display: flex; /* Asegura que el logo sea flexible para alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    }
+
+    .logo a {
+        display: inline-block; /* Permite que el enlace envuelva la imagen */
+    }
+
+    .logo img {
+        max-width: 25%; /* Evita desbordamientos horizontales */
+        transition: transform 0.3s ease; /* Animación para hover (opcional) */
+    }
+
+    .logo img:hover {
+        transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+    }
+
+  
+  .main-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    color: #bbb;
+  }
+
+/* Main Layout */
+.reserva, .sala, .form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Sala Information (Left Side) */
+.sala {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sala img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sala h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Reservation Form (Right Side) */
+.form {
+    flex: 1;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.reservation-form label {
+    font-weight: bold;
+}
+
+.reservation-form input,
+.reservation-form select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #222;
+}
+
+.reservation-form button.reservar-btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.reservation-form button.reservar-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Footer */
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}

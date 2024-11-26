@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú|Opal</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header-top">
+    <div class="logo">
+      <a href="index.html">
+          <img src="img/logo opa.png" alt="Logo de Opal">
+      </a>
+    </div>
+    <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="reserva.html">Reservar</a>
+        <a href="misresv.php">Mis Reservaciones</a>
+        <a href="contactos.html">Contacto</a>
+    </nav>
+  </header>
+    </div>
+    <nav class="category-nav">
+      <a href="#" data-category="all">Todos</a>
+      <a href="#" data-category="desayunos">Desayunos</a>
+      <a href="#" data-category="comidas">Comidas</a>
+      <a href="#" data-category="cortes">Cortes</a>
+      <a href="#" data-category="bebidas">Bebidas</a>
+      <a href="#" data-category="postres">Postres</a>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <section id="menu-items">
+      <div class="item" data-category="cortes">
+        <img src="img/carne.jpg" alt="Corte de Carne">
+        <h3>Corte de Carne</h3>
+      </div>
+      <div class="item" data-category="bebidas">
+        <img src="img/vino.jpg" alt="Vino">
+        <h3>Vino</h3>
+      </div>
+      <div class="item" data-category="postres">
+        <img src="img/tiramisu.jpg" alt="Postre">
+        <h3>Postre</h3>
+      </div>
+      <div class="item" data-category="desayunos">
+        <img src="img/desayuno.jpg" alt="Desayuno Americano">
+        <h3>Desayuno Americano</h3>
+      </div>
+      <div class="item" data-category="comidas">
+        <img src="img/comida.avif" alt="Comida Gourmet">
+        <h3>Comida Gourmet</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com"><img src="img/face.webp" alt="Facebook"></a>
+        <a href="https://www.instagram.com"><img src="img/insta.png" alt="Instagram"></a>
+    </div>
+    <p>© 2024 Opal. All rights reserved</p>
+  </footer>
+
+  <style>
+    footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    }
+
+    footer .social-links a {
+        margin: 0 0.5rem;
+        display: inline-block;
+    }
+
+    footer .social-links img {
+        width: 30px;
+        height: auto;
+    }
+
+    footer p {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+    }
+  </style>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

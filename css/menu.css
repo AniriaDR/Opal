@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilo de la barra de navegación */
+header {
+  width: 100%;
+  padding: 20px 40px; /* Espaciado adicional para darle aire */
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #555;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #444;
+}
+
+.logo {
+  display: flex; /* Asegura que el logo sea flexible para alineación */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.logo a {
+  display: inline-block; /* Permite que el enlace envuelva la imagen */
+}
+
+.logo img {
+  max-width: 25%; /* Evita desbordamientos horizontales */
+  transition: transform 0.3s ease; /* Animación para hover (opcional) */
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+}
+
+
+.main-nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: #bbb;
+}
+
+/* Barra de categorías */
+.category-nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: #333;
+  border-bottom: 1px solid #555;
+}
+
+.category-nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.category-nav a:hover {
+  color: #bbb;
+}
+
+/* Contenido principal */
+main {
+  padding: 20px;
+}
+
+#menu-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  background-color: #555;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+footer .social-links a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+footer .social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}

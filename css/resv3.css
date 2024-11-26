@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo de la barra de navegación */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+}
+  
+  .logo {
+    display: flex; /* Asegura que el logo sea flexible para alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo a {
+    display: inline-block; /* Permite que el enlace envuelva la imagen */
+}
+
+.logo img {
+    max-width: 25%; /* Evita desbordamientos horizontales */
+    transition: transform 0.3s ease; /* Animación para hover (opcional) */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+}
+
+  
+  .main-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    color: #bbb;
+  }
+
+/* Hero Section */
+.hero {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section Layout */
+.section {
+    padding: 40px 0;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Sala Normal Card */
+.sala-normal {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente el contenido dentro de la tarjeta */
+}
+
+.sala-normal img {
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-left: 20px; /* Espacio a la izquierda de la imagen */
+}
+
+.sala-content {
+    display: flex; /* Flex para alinear texto y imagen */
+    flex-direction: row-reverse; /* Coloca el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Centra verticalmente */
+}
+
+.sala-description {
+    flex: 1; /* Permite que la descripción ocupe el resto del espacio disponible */
+    margin-left: 20px;
+}
+
+.sala-description h2 {
+    margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+
+.sala-content img {
+    width: 50%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px;
+}
+
+/* Info and Form */
+.info-y-form {
+    display: flex; /* Utiliza flexbox para alinear las tarjetas */
+    justify-content: space-between; /* Espacio entre los elementos */
+    gap: 30px; /* Espacio entre los cards */
+}
+.info-y-form h2 {
+    margin-bottom: 20px;
+}
+
+.cosas,
+.formulario {
+    flex: 1; /* Cada card ocupa el mismo espacio */
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #222;
+}
+
+/* Button */
+
+.button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff4500;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}

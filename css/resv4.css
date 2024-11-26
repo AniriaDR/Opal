@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de la barra de navegación */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+  }
+  
+  .logo {
+    display: flex; /* Asegura que el logo sea flexible para alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo a {
+    display: inline-block; /* Permite que el enlace envuelva la imagen */
+}
+
+.logo img {
+    max-width: 25%; /* Evita desbordamientos horizontales */
+    transition: transform 0.3s ease; /* Animación para hover (opcional) */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+}
+
+  
+  .main-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    color: #bbb;
+  }
+
+main {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+
+.policies, .summary {
+    width: 48%;
+}
+
+.policies h4, .summary h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.policies p, .summary p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.accept-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accept-button:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}

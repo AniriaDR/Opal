@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Estilo de la barra de navegación */
+header {
+    width: 100%;
+    padding: 20px 40px; /* Espaciado adicional para darle aire */
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+}
+
+.header-top {
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+  
+.logo {
+    display: flex; /* Asegura que el logo sea flexible para alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo a {
+    display: inline-block; /* Permite que el enlace envuelva la imagen */
+}
+
+.logo img {
+    max-width: 25%; /* Evita desbordamientos horizontales */
+    transition: transform 0.3s ease; /* Animación para hover (opcional) */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+}
+
+  
+  .main-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    color: #bbb;
+  }
+
+main {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+
+.policies, .summary {
+    width: 48%;
+}
+
+.policies h4, .summary h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.policies p, .summary p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.accept-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accept-button:hover {
+    background-color: #555;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #444;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+    color: #ddd;
+}
+
+tbody tr {
+    border-bottom: 1px solid #555;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #444;
+}
+
+tbody tr:hover {
+    background-color: #555;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: left;
+    color: #ccc;
+}
+
+td, th {
+    word-wrap: break-word;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+}
+
+.btn {
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.editar {
+    background-color: #4CAF50; /* Verde */
+}
+
+.editar:hover {
+    background-color: #45a049;
+}
+
+.eliminar {
+    background-color: #f44336; /* Rojo */
+}
+
+.eliminar:hover {
+    background-color: #d32f2f;
+}
+
+
+
+/* editar resrva estilo*/
+/* Agregamos los estilos para el formulario de edición */
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="date"]:focus,
+form input[type="time"]:focus,
+form input[type="number"]:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.8);
+}
+
+form button[type="submit"] {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ff6600;
+}
+
+form h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form .error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mensaje-exito {
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.mensaje-exito {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.no-data {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.editar {
+    background-color: #0c0c0c;
+}
+
+.editar:hover {
+    background-color: #0c0c0c;
+}
+
+.eliminar {
+    background-color: #0c0c0c;
+}
+
+.eliminar:hover {
+    background-color: #0c0c0c;
+}
+
+/* Pie de página */
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaciado entre los iconos */
+}
+
+footer .social-links img {
+    width: 24px; /* Tamaño ajustado */
+    height: auto;
+    transition: transform 0.3s ease; /* Animación opcional */
+}
+
+footer .social-links img:hover {
+    transform: scale(1.2); /* Efecto hover */
+}
+

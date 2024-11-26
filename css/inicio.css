@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    padding: 20px 40px; /* Espaciado adicional para darle aire */
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex; /* Asegura que el logo sea flexible para alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo a {
+    display: inline-block; /* Permite que el enlace envuelva la imagen */
+}
+
+.logo img {
+    max-width: 25%; /* Evita desbordamientos horizontales */
+    transition: transform 0.3s ease; /* Animación para hover (opcional) */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+}
+
+
+/* Estilo de la barra de navegación */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .main-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    color: #bbb;
+  }
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección Sobre Nosotros */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ddd;
+    color: #333;
+}
+
+.about-us .text-content {
+    width: 60%;
+}
+
+.about-us h2 {
+    font-family: "Pacifico", serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.about-us button {
+    padding: 0.5rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.about-us button:hover {
+    background-color: #555;
+}
+
+.about-us .image-content {
+    width: 35%;
+}
+
+.about-us .image-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}

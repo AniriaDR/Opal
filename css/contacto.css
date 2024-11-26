@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    display: flex; /* Asegura que el logo sea flexible para alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo a {
+    display: inline-block; /* Permite que el enlace envuelva la imagen */
+}
+
+.logo img {
+    max-width: 25%; /* Evita desbordamientos horizontales */
+    transition: transform 0.3s ease; /* Animación para hover (opcional) */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+}
+
+
+/* Estilo de la barra de navegación */
+header {
+    width: 100%;
+    padding: 20px 40px; /* Espaciado adicional para darle aire */
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .main-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    color: #bbb;
+  }
+
+main {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.address, .phone {
+    text-align: center;
+}
+
+.address h4, .phone h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.address p, .phone p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.map {
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}

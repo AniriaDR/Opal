@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio|Opal</title>
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header-top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo opa.png" alt="Logo de Opal">
+            </a>
+        </div>
+                
+        <nav class="main-nav">
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="misresv.php">Mis Reservaciones</a>
+            <a href="contactos.html">Contacto</a>
+        </nav>
+      </header>
+
+    <!-- Carrusel -->
+    <section class="carousel">
+        <img src="img/res1.avif" alt="Restaurante 1">
+        <img src="img/res2.jpg" alt="Restaurante 2">
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="about-us">
+        <div class="text-content">
+            <h2>Sobre Nosotros</h2>
+            <p>Bienvenidos a Opal, el destino definitivo para los amantes de la carne de alta gama. Nos especializamos en cortes premium seleccionados con esmero, preparados por chefs expertos que combinan técnicas tradicionales con un toque contemporáneo. Nuestro ambiente elegante y servicio excepcional garantizan una experiencia gastronómica inolvidable. En Opal, cada visita es una celebración de la excelencia y el buen gusto. ¡Te esperamos para ofrecerte una experiencia culinaria única!</p>
+            <button id="reserva-btn">Reserva Ahora</button>
+        </div>
+        <div class="image-content">
+            <img src="img/res2.jpg" alt="Imagen del restaurante">
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com"><img src="img/face.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="img/insta.png" alt="Instagram"></a>
+        </div>
+        <p>© 2024 Opal. All rights reserved</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.getElementById('reserva-btn').addEventListener('click', function() {
+        window.location.href = 'reserva.html';
+    });
+</script>

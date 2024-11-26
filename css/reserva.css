@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+  }
+  
+  .logo {
+    display: flex; /* Asegura que el logo sea flexible para alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo a {
+    display: inline-block; /* Permite que el enlace envuelva la imagen */
+}
+
+.logo img {
+    max-width: 25%; /* Evita desbordamientos horizontales */
+    transition: transform 0.3s ease; /* Animación para hover (opcional) */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+}
+
+  .main-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    color: #bbb;
+  }
+  
+  .page-title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .reservation-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .reservation-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+  }
+  
+  .reservation-card {
+    background-color: #ccc;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reservation-card h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .reservation-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .reservation-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .reservation-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .reservation-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Pie de página */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+footer .social-links a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+footer .social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+  
